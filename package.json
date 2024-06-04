@@ -1,0 +1,7 @@
+{
+	"name": "Вкусно и Водичка",
+	"dependencies": {
+		"@dotlottie/player-component": "^2.7.12",
+		"express": "^4.19.2"
+	}
+}
