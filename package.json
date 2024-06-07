@@ -2,6 +2,8 @@
 	"name": "Вкусно и Водичка",
 	"dependencies": {
 		"@dotlottie/player-component": "^2.7.12",
-		"express": "^4.19.2"
+		"bcrypt": "^5.1.1",
+		"express": "^4.19.2",
+		"sqlite3": "^5.1.7"
 	}
 }

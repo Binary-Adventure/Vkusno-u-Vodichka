@@ -23,12 +23,22 @@
                     <li class="navbar-item"><a class="navbar-link" href="#about">О нас</a></li>
                     <li class="navbar-item"><a class="navbar-link" href="#products">Продукт</a></li>
                     <li class="navbar-item"><a class="navbar-link" href="#contact-form">Обратная связь</a></li>
+                    <li class="navbar-item dropdown">
+                      <a class="navbar-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Войти
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginFormModal">Войти</a></li>
+                        <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#registrationFormModal">Регистрация</a></li>
+                      </ul>
+                    </li>
                 </ul>
             </div>
         </nav>
 
         <header class="header ">
             <div class="overlay"></div>
+            <div id="welcome-message" class="mt-3"></div>
             <div class="container">
                 <div class="description ">
                     <h1>
@@ -189,6 +199,57 @@
                 <button type="submit" class="btn btn-primary">Отправить</button>
               </form>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="loginFormModal" tabindex="-1" aria-labelledby="loginFormModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginFormModalLabel">Войти</h5>
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="loginForm">
+                <div class="mb-3">
+                  <label for="loginEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="loginEmail" placeholder="Введите email">
+                </div>
+                <div class="mb-3">
+                  <label for="loginPassword" class="form-label">Пароль</label>
+                  <input type="password" class="form-control" id="loginPassword" placeholder="Введите пароль">
+                </div>
+                <button type="submit" class="btn btn-primary">Войти</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal fade" id="registrationFormModal" tabindex="-1" aria-labelledby="registrationFormModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="registrationFormModalLabel">Регистрация</h5>
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="registrationForm">
+                <div class="mb-3">
+                  <label for="registrationEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="registrationEmail" placeholder="Введите email">
+                </div>
+                <div class="mb-3">
+                  <label for="registrationPassword" class="form-label">Пароль</label>
+                  <input type="password" class="form-control" id="registrationPassword" placeholder="Введите пароль">
+                </div>
+                <button type="submit" class="btn btn-primary" id="btn-reg">Зарегистрироваться</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
           </div>
         </div>
       </div>
