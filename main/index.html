@@ -20,9 +20,9 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="navbar-item"><a class="navbar-link" href="#">Главная</a></li>
-                    <li class="navbar-item"><a class="navbar-link" href="#">О нас</a></li>
-                    <li class="navbar-item"><a class="navbar-link" href="#">Продукт</a></li>
-                    <li class="navbar-item"><a class="navbar-link" href="#">Контакты</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#about">О нас</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#products">Продукт</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#contact-form">Обратная связь</a></li>
                 </ul>
             </div>
         </nav>
@@ -31,12 +31,12 @@
             <div class="overlay"></div>
             <div class="container">
                 <div class="description ">
-                    <h3>
+                    <h1>
                         <font color="#3AC1EF">▍ Настоящая вода
                         <p>Тысячи людей по всему миру уже испопробовали все вкусы освежающего источника "Вкусно и Водичка". Поробуй и ты</p>
-                        <button class="btn btn-outline-info">Купить!</button>
+                        <a href="#purchase-menu" class="btn btn-outline-info">Купить!</a>
                         </font>
-                    </h3>
+                    </h2>
                 </div>
             </div>
         </header>
@@ -83,6 +83,114 @@
             </div>
         </div>
 
+        <div class="products" id="products">
+            <h1 class="text-center">Продукция</h1>
+        <div class="container">
+         <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+           <img align="center" src="images/mango.jpg" class="img-fluid">
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+           <img align="center" src="images/rasberry.jpg" class="img-fluid">
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+           <img align="center" src="images/banana.jpg" class="img-fluid">
+          </div>
+       <div class="col-lg-4 col-md-4 col-sm-12">
+           <img align="center" src="images/apples.jpg" class="img-fluid">
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+           <img align="center" src="images/blueberries.jpg" class="img-fluid">
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+           <img align="center" src="images/coconut.jpg" class="img-fluid">
+          </div>
+       <div class="col-lg-4 col-md-4 col-sm-12">
+           <img align="center" src="images/whatermelon.jpg" class="img-fluid">
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+           <img align="center" src="images/melon.jpg" class="img-fluid">
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+           <img align="center" src="images/mint.jpg" class="img-fluid">
+          </div>
+         </div>
+        </div>
+       </div>
+        <div class="purchase-menu" id="purchase-menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <label for="flavor">Выберите вкус:</label>
+                <select id="flavor" class="form-select">
+                  <option value="mango">Манго</option>
+                  <option value="raspberry">Малина</option>
+                  <option value="banana">Банан</option>
+                  <option value="whatermelon">Арбуз</option>
+                  <option value="melon">Дыня</option>
+                  <option value="coconut">Кокос</option>
+                  <option value="mint">Мята</option>
+                  <option value="blueberries">Голубика</option>
+                  <option value="apples">Яблоко</option>
+                  </select>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <label for="capacity">Выберите емкость:</label>
+                <select id="capacity" class="form-select">
+                  <option value="500ml">500 мл (Банка)</option>
+                  <option value="1L">1 л (Алюминевая бутылка)</option>
+                  <option value="1L2">1 л (Стеклянная бутылка)</option>
+                  <option value="1.5L">1.5 л (Бутылка из эколог. пластика)</option>
+                  </select>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <label for="address">Адрес доставки:</label>
+                <input type="text" id="address" class="form-control">
+              </div>
+      
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <label for="quantity">Количество:</label>
+                <input type="number" id="quantity" class="form-control">
+              </div>
+              <div class="col-12">
+                <button type="button" class="btn btn-primary mt-3">Купить!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="contact-form" id="contact-form">
+        <h2 class="text-center">Свяжитесь с нами</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <form id="contactForm">
+                <div class="mb-3">
+                  <label for="name" class="form-label">ФИО:</label>
+                  <input type="text" class="form-control" id="name" placeholder="Введите ваше ФИО">
+                </div>
+      
+                <div class="mb-3">
+                  <label for="email" class="form-label">E-mail:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Введите ваш E-mail">
+                </div>
+      
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Номер телефона:</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="Введите ваш номер телефона">
+                </div>
+      
+                <div class="mb-3">
+                  <label for="message" class="form-label">Сообщение:</label>
+                  <textarea class="form-control" id="message" rows="3" placeholder="Введите ваше сообщение"></textarea>
+                </div>
+      
+                <button type="submit" class="btn btn-primary">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </body>
 </html>
